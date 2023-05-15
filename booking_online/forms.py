@@ -1,8 +1,8 @@
 from django import forms
-from .models import Reservation
+from .models import BookingOnline
 
 
-class ReservationForm(forms.ModelForm):
+class BookingOnlineForm(forms.ModelForm):
     class Meta:
         model = Reservation
         fields = ['no_of_guest', 'date', 'time']
