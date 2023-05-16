@@ -15,7 +15,12 @@ video {
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: black;
+    background-color: rgba(244, 240, 240, 0.463);
     opacity: 0.5;
     z-index: 1;
   }
+.button {
+    margin: 27em;
+    width: 17em;
+    height: 4em;
+}
