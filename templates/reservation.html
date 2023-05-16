@@ -7,24 +7,31 @@
 
 {% block body %}
 
+<div class="position-relative m-4">
+  <div class="progress" role="progressbar" aria-label="Progress" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="height: 1px;">
+    <div class="progress-bar" style="width: 0%"></div>
+  </div>
+  <button type="button" class="position-absolute top-0 start-0 translate-middle btn btn-sm btn-primary rounded-pill" style="width: 2rem; height:2rem;">1</button>
+  <button type="button" class="position-absolute top-0 start-50 translate-middle btn btn-sm btn-primary rounded-pill" style="width: 2rem; height:2rem;">2</button>
+  <button type="button" class="position-absolute top-0 start-100 translate-middle btn btn-sm btn-secondary rounded-pill" style="width: 2rem; height:2rem;">3</button>
+</div>
 
-<div
-class="p-5 text-center bg-image"
-style="
-  background-image: url('https://img.freepik.com/free-photo/table-with-flowers-pots-restaurant_181624-24428.jpg?w=1060&t=st=1684243615~exp=1684244215~hmac=4de7b55727cc508c6e8c73a7a3d21a5bae1c13b4c0ebdc778bd8f36b574a119f');
-  height: 900px; background-size: cover;
-"
->
-<div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
-  <div class="d-flex justify-content-center align-items-center h-100">
-    <div class="text-white">
-      <h1 class="mb-3">Go ahead and book a table!</h1>
-      <h4 class="mb-3">....</h4>
-      <a class="btn btn-outline-light btn-lg" href="#!" role="button"
-      >Book a table </a
-      >
+<section class="vh-100">
+  <div class="container py-5 h-100">
+    <div class="row d-flex align-items-center justify-content-center h-100">
+      <div class="col-md-8 col-lg-7 col-xl-6">
+        <img src="https://img.freepik.com/free-vector/man-sitting-restaurant-waiter-offering-wine-bottle-guy-alone-table-modern-restaurant-evening_575670-320.jpg?w=900&t=st=1684252355~exp=1684252955~hmac=28ea0884c3f2290cd3f4e8d1198da5010ae77d83cd4fdf66d1aa0dc5e39ac4e1"
+          class="img-fluid" alt="Phone image">
+      </div>
+      <div class="col-md-7 col-lg-5 col-xl-5 offset-xl-1">
+        <h1 class="fw-bold mb-5 text-muted"> Online booking </h1>
+        <h2>Date, lunch with friends or buisiness dinner? </h2>
+        <h2>Coose a convenient table seat from the avaliable,  </h2>
+        <h2>and provide details, and we'll take care of the rest.</h2>
+      <button class="btn btn-primary btn-lg btn-block"> Book a table </button>
+      </div>
     </div>
   </div>
-</div>
-</div>
-{% endblock %}  
+</section>
+
+{% endblock %}

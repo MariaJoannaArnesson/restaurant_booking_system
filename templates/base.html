@@ -37,23 +37,22 @@
                             <a class="nav-link active cHover" href="{% url 'online_booking' %}">Online Booking</a>
                         </li>                   
                         {% if user.is_authenticated %}
+                       
                         <!--Clinic Staff Link-->
-                        <li class="nav-item">
-                            <a class="nav-link active cHover" href="{% url 'mybookings' %}">My booknings</a>
-                        </li> 
+                       
                         <li class="nav-item dropdown me-3 fs-5">
                             <a class="nav-link active dropdown-toggle cHover" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              User
+                              {{ user }}
                             </a>
                             <ul class="dropdown-menu  border zNav">
-                              <li><a class="dropdown-item" href="#">User Panel</a></li>
+                              <li><a class="dropdown-item" href="{% url 'mybookings' %}">My bookings</a></li>
                               <li><hr class=""></li>
-                              <li><a class="dropdown-item" href="#">Sign Out</a></li>
+                              <li><a class="dropdown-item" href="{% url 'account_logout' %}">Log out<output></output></a></li>
                             </ul>
                         </li>
                         {% else %}
                         <li class="nav-item me-3">
-                            <a class="nav-link active cHover" href="#">Sign in</a>
+                            <a class="nav-link active cHover" href="{% url 'account_login' %}">Login</a>
                         </li>
                         {% endif %}
                     </ul>

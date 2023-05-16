@@ -40,7 +40,7 @@ class OnlineBooking(models.Model):
     date = models.DateField(null=False, blank=False)
     time = models.CharField(null=True, blank=False, choices=TIME_CHOICES, max_length=60)
     occassion = models.CharField(max_length=150, choices=OCCASSION_CHOICES, default="Birthday")
-    special_request = models.TextField(max_length=1024, blank=True)
+    special_request = models.TextField(max_length=300, blank=True)
 
     class Meta:
         unique_together = ["no_of_guest", "date", "time"]

@@ -8,41 +8,34 @@
 {% block body %}
 
 
-
-<section class="vh-100" style="background-color: #9A616D;">
-  <div class="container py-5 h-100">
+<section class="vh-100">
+  <div class="container-fluid h-custom">
     <div class="row d-flex justify-content-center align-items-center h-100">
-      <div class="col col-xl-10">
-        <div class="card" style="border-radius: 1rem;">
-          <div class="row g-0">
-            <div class="col-md-6 col-lg-5 d-none d-md-block">
-              <img src="https://img.freepik.com/free-vector/man-sitting-restaurant-waiter-offering-wine-bottle-guy-alone-table-modern-restaurant-evening_575670-320.jpg?w=900&t=st=1684252355~exp=1684252955~hmac=28ea0884c3f2290cd3f4e8d1198da5010ae77d83cd4fdf66d1aa0dc5e39ac4e1"
-                alt="login form" class="img-fluid" style="border-radius: 1rem 0 0 1rem;" />
-            </div>
-            <div class="col-md-6 col-lg-7 d-flex align-items-center">
-              <div class="card-body p-4 p-lg-5 text-black">
-                    <form method='post' action="{% url 'mybookings' %}">
-                      <div class="d-flex align-items-center mb-3 pb-1">
-                        <i class="fas fa-cubes fa-2x me-3" style="color: #ff6219;"></i>
-                        <span class="h1 fw-bold mb-0">Le chere</span>
-                      </div>
-                      <h5 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Book a table</h5>
-                      {% csrf_token %}
-                      {{ form.as_p }}
-                      <div class="form-outline mb-4">
-                        
-                          <button class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3" type="submit">Add reservation</button>
-                        
-                        </div>
-                    </form>
-                  </form>
-
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div class="col-md-9 col-lg-6 col-xl-5">
+        <img src="https://img.freepik.com/free-vector/waiters-concept-illustration_114360-2908.jpg?w=1060&t=st=1684266496~exp=1684267096~hmac=5f7ce09bf9265ee365e209700bfa6258f97461744c5fa1aec14eab988542d737"
+          class="img-fluid" alt="Sample image">
+      </div>
+      <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+        <form method='post' action="{% url 'mybookings' %}">
+                      
+          <span class="h1 fw-bold mb-0">Le chere</span>
+       
+        <h5 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Book a table</h5>
+       
+        {% csrf_token %}
+        {{ form.as_p }}
+   
+          
+            <button class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3" type="submit">Add reservation</button>
+          
+         
+      </form>
       </div>
     </div>
-  </section>
+  </div>
+  
+</section>
+
+                   
+                  
 {%endblock%}
