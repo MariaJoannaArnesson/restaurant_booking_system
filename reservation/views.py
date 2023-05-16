@@ -10,6 +10,9 @@ from django.contrib import messages
 def home(request):
     return render(request, 'home.html', {})
 
+def reservation(request):
+    return render(request, 'reservation.html')    
+
 
 @login_required
 def online_booking(request):
