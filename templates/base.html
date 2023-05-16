@@ -48,7 +48,7 @@
                             <ul class="dropdown-menu  border zNav">
                               <li><a class="dropdown-item" href="#">User Panel</a></li>
                               <li><hr class=""></li>
-                              <li><a class="dropdown-item" href="{% url 'account_logout' %}">Sign Out</a></li>
+                              <li><a class="dropdown-item" href="#">Sign Out</a></li>
                             </ul>
                         </li>
                         {% else %}
@@ -98,7 +98,7 @@
                             <a href="#" class="uLine">Menu</a>
                         </p>
                         <p>
-                            <a href="#" class="uLine">Reservation</a>
+                            <a href="{% url 'online_booking' %}" class="uLine">Reservation</a>
                         </p>
                     </div>
                     <!-- Service links Regular -->

@@ -10,7 +10,7 @@ class No_of_guest(models.Model):
         return str(self.guest)
 
 
-class BookingOnline(models.Model):
+class OnlineBooking(models.Model):
 
     TIME_CHOICES = [
         ("6 PM", "6 PM"),
@@ -47,5 +47,3 @@ class BookingOnline(models.Model):
 
     def __str__(self):
         return f'{self.date}'
-        
-
