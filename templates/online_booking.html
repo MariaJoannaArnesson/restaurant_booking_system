@@ -7,7 +7,7 @@
           <h3>Book a table</h3>
          
                   
-                    <form class='mt-5' method='post' action="/booking/">
+                    <form class='mt-5' method='post' action="{% url 'mybookings' %}">
                       {% csrf_token %}
                       {{ form.as_p }}
                       <div>
