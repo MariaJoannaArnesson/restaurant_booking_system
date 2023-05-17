@@ -149,8 +149,9 @@ Responsive
 - Log in / Log out
     -
 
-    ![sign_up]()
+    ![sign_up](static/images/signup.png)
     ![log_in](static/images/login.png)
+    ![log_out](static/images/signout.png)
 
 ## Features which could be implemented in the future:
 - video supporting the facts:
