@@ -97,11 +97,6 @@ Responsive
 
     The navigation bar will allow the user to easily navigate from page to page on all devices without returning to the previous page using the "Back" button.
 
-
-    ![Navigation bar]()
-    ![Navigation bar iphone]()
-    ![Navigation bar ipad]()
-
 - Home Page
     - After the page loads, a picture of a women with a cup is shown as the main picture that introduces the text about the restaurant.    
 
@@ -120,11 +115,11 @@ Responsive
    ![special_offers](static/assets/images/special_offers.png)
 
 - Footer
-    - The footer includes site pages, such as: Home, Menu, Online booking. A map of the restaurant's location, address and opening hours are presented.
+    - The footer includes restaurant's location, address and opening hours are presented.
 
     - The background of the footer is slightly darker to show the contrast between the text in a distinctive way.
 
-    ![Footer]()
+    ![Footer](static/images/footer.png)
 
 - Menu
     - The menu page gives a list of meals served in the restaurant. There is described the meals, drinks and the price of them.

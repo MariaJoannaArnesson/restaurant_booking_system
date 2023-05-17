@@ -72,6 +72,7 @@
     {% block body %}
     {% endblock %}
     <footer class="bg-dark text-white">
+       
         <div class="container-fluid pt-3">
             <section class="">
                 <div class="container text-center text-md-start mt-5">
@@ -85,7 +86,7 @@
                             Making delicious food since 1989.
 
                         </h5>
-                        <h2> Made with Love </h2>
+                        
                     </div>
                     <!-- Grid column -->
                     
@@ -95,21 +96,29 @@
                         <h2 class="text-uppercase fw-bold mb-4 textGradient">
                             Le chère
                         </h2>
-                        <p>
-                            <a href="{% url 'home' %}" class="uLine">Home</a>
-                        </p>
-                        <p>
-                            <a href="#" class="uLine">Menu</a>
-                        </p>
-                        <p>
-                            <a href="{% url 'online_booking' %}" class="uLine">Reservation</a>
-                        </p>
+                        <h5 class="text-uppercase fw-bold mb-4 textGradient">Open Daily</h5>
+                        <p>10 AM - 10 PM </p>
+                        <hr>
+                        <h5 class="text-uppercase fw-bold mb-4 textGradient">Thank You</h5>
                     </div>
-                    <!-- Service links Regular -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                        <p><i class="fas fa-home me-3"></i> London, 8 London Bridge St, UK</p>
+                        <p>
+                          <i class="fas fa-envelope me-3"></i>
+                          info@example.com
+                        </p>
+                        <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+                      </div>
                   </div>
-                  <!-- Grid row -->
+                  
                 </div>
               </section>
+              <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+                Made by <strong>Maria Arnesson</strong> for educational purposes at Code Institute
+                <a class="text-reset fw-bold" href="https://github.com/MariaJoannaArnesson"> Follow me: <i class="fa-brands fa-github" style="color: #f2edee;"></i></a>
+              </div>
         </div>
     </footer>
   </body>
