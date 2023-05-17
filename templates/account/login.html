@@ -14,7 +14,7 @@
 {% block head_title %}{% trans "Sign In" %}{% endblock %}
 {% block body %}
 
-<section class="v-50">
+<section class="v-100">
   <div class="container-fluid h-custom">
     <div class="row d-flex justify-content-center align-items-center h-100">
       <div class="col-md-9 col-lg-6 col-xl-5">
@@ -33,7 +33,7 @@
         {% endif %}
         <div class="text-center pt-1 mb-5 pb-1">
           <button type="button" class="btn btn-primary">Log in</button>
-          <a class="text-muted" href="#!">Forgot password?</a>
+          <a class="text-muted" href="{% url 'account_password_reset' %}">Forgot password?</a>
         </div>
         <div class="d-flex align-items-center justify-content-center pb-4">
           <p class="mb-0 me-2">Don't have an account?</p>
