@@ -1,39 +1,48 @@
-{% extends 'account/base.html' %}
+{% extends 'base.html' %}
 {% load static %}
+
+{% block head %}
+<title>Log in </title>
+{% endblock %}
+
+
+
 
 {% load i18n %}
 {% load account socialaccount %}
 
 {% block head_title %}{% trans "Sign In" %}{% endblock %}
+{% block body %}
 
-{% block content %}
-<section class="vh-100 gradient-custom">
-  <div class="container py-5 h-100">
+<section class="v-50">
+  <div class="container-fluid h-custom">
     <div class="row d-flex justify-content-center align-items-center h-100">
-      <div class="col-12 col-md-8 col-lg-6 col-xl-5">
-        <div class="card bg-dark text-white" style="border-radius: 1rem;">
-          <div class="card-body p-5 text-center">
-
-            <div class="mb-md-5 mt-md-4 pb-5">
-              <h2 class="fw-bold mb-2 text-uppercase">{% trans "Sign In" %}</h2>
-
-      <p>{% blocktrans %}Welcome back to the code|star blog. To leave a comment or like a post, please log in. If you
-        have not created an account yet, then <a class="link" href="{{ signup_url }}">sign up</a>
-        first.{% endblocktrans %}</p>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-md-8 mt-3 offset-md-2">
+      <div class="col-md-9 col-lg-6 col-xl-5">
+        <img src="https://img.freepik.com/free-vector/access-control-system-abstract-concept_335657-3180.jpg?w=826&t=st=1684351636~exp=1684352236~hmac=4bee49da49d57ba4883c3d0f7e5a4f9e284def7f67e3a6e440d7a2afb4d24495"
+          class="img-fluid" alt="Sample image">
+      </div>
+      <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-0">
+  
       <form class="login" method="POST" action="{% url 'account_login' %}">
+        <h2 class="fw-bold mb-2 text-uppercase">{% trans "Sign In" %}</h2>
+        <p class="text-white-50 mb-5">Please login to your account</p>
         {% csrf_token %}
         {{ form.as_p }}
         {% if redirect_field_value %}
         <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
         {% endif %}
-        <button class="btn btn-outline-light btn-lg px-5" type="submit">{% trans "Sign In" %}</button>
+        <div class="text-center pt-1 mb-5 pb-1">
+          <button type="button" class="btn btn-primary">Log in</button>
+          <a class="text-muted" href="#!">Forgot password?</a>
+        </div>
+        <div class="d-flex align-items-center justify-content-center pb-4">
+          <p class="mb-0 me-2">Don't have an account?</p>
+          <button type="button" class="btn btn-outline-danger"><a href="{% url 'account_signup' %}" class="text-white-50 fw-bold">Create new</a></button>
+        </div>
       </form>
     </div>
   </div>
-</div>
+  
+  </div>
 </section>
 {% endblock %}
