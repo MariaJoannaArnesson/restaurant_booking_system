@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- CSS only -->
+    <link rel="icon" type="image/x-icon" href="{% static 'favicon/favicon.ico' %}" />
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous" defer></script>
-
+    <script src="{% static 'js/script.js' %}"></script>
+    <script src="https://kit.fontawesome.com/142db3e41a.js" crossorigin="anonymous"></script>
 
     {% block head %}
     {% endblock %}
@@ -20,7 +22,7 @@
         <nav class="navbar bg-white navbar-white navbar-expand-lg shadow-sm">
             <div class="container-fluid">
                 <a class="navbar-brand  cHover cGreen fs-2" href="#">
-                    Restaurant 
+                    <i class="fa-solid fa-utensils" style="color: #511f50;"></i>  Le chère 
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -28,7 +30,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mb-2 mb-lg-0  fs-5">
                         <li class="nav-item">
-                            <a class="nav-link active cHover" aria-current="page" href="{% url 'home' %}">Home</a>
+                            <a class="nav-link active cHover" aria-current="page" href="{% url 'home' %}"> Home </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active cHover" href="#">Our Menu</a>
@@ -42,7 +44,7 @@
                        
                         <li class="nav-item dropdown me-3 fs-5">
                             <a class="nav-link active dropdown-toggle cHover" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              {{ user }}
+                                <i class="fa-solid fa-clipboard-user"> </i> {{ user }} 
                             </a>
                             <ul class="dropdown-menu  border zNav">
                               <li><a class="dropdown-item" href="{% url 'mybookings' %}">My bookings</a></li>
@@ -51,9 +53,12 @@
                             </ul>
                         </li>
                         {% else %}
-                        <li class="nav-item me-3">
-                            <a class="nav-link active cHover" href="{% url 'account_login' %}">Login</a>
-                        </li>
+                       
+                        <div class="d-grid gap-2 d-md-block">
+                            <button class="btn btn-primary" type="button"> <a class="btn btn-primary" href="{% url 'account_signup' %}">Sign Up</a></button>
+                            <button class="btn btn-primary" type="button"> <a class="btn btn-primary" href="{% url 'account_login' %}">Login</a></button>
+                          </div>
+                        
                         {% endif %}
                     </ul>
                 </div>
