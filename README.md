@@ -127,8 +127,11 @@ Responsive
   ![menu](static/assets/images/menu.png)
 
 - Booking Online Page
-    - Booking online page 
+    - The user has to be logged in to reserve a table. There is a possibility to book a table on the online booking website. The user selects the date/time of the reservation from the drop-down list and can select the number of guests from 1 to 5 to indicate how many people they want to include in their booking. The user then clicks the Add reservation button to complete the booking and is redirected to the My Bookings page to see all upcoming and past bookings.
 
+    - ![onlinebooking](static/images/onlinebooking.png)
+    - ![onlinebooking_ipad](static/images/onlinebooking_ipad.png)
+- Messages 
     ![messages](static/assets/images/messages.png)
     ![online_booking](static/assets/images/online_booking.png)
 
