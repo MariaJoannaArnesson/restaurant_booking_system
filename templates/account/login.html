@@ -31,10 +31,10 @@
         {% if redirect_field_value %}
         <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
         {% endif %}
-        <div class="text-center pt-1 mb-5 pb-1">
-          <button type="button" class="btn btn-primary">Log in</button>
-          <a class="text-muted" href="{% url 'account_password_reset' %}">Forgot password?</a>
-        </div>
+       
+        <button type="button" class="btn btn-primary">Log in</button>
+         
+       
         <div class="d-flex align-items-center justify-content-center pb-4">
           <p class="mb-0 me-2">Don't have an account?</p>
           <button type="button" class="btn btn-outline-danger"><a href="{% url 'account_signup' %}" class="text-white-50 fw-bold">Create new</a></button>

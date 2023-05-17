@@ -67,3 +67,7 @@ input[type=submit]:hover {
 input[type="submit"]:active {
 	opacity:0.4;
 }
+#id_remember {
+	margin-top: -1em;
+    margin-left: -4em;
+}
