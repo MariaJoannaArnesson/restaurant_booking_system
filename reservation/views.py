@@ -10,8 +10,13 @@ from django.contrib import messages
 def home(request):
     return render(request, 'home.html', {})
 
+
 def reservation(request):
-    return render(request, 'reservation.html')    
+    return render(request, 'reservation.html')
+
+
+def menu(request):
+    return render(request, 'menu.html')
 
 
 @login_required
