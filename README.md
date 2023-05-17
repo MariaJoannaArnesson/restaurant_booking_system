@@ -150,7 +150,7 @@ Responsive
     -
 
     ![sign_up]()
-    ![log_in]()
+    ![log_in](static/images/login.png)
 
 ## Features which could be implemented in the future:
 - video supporting the facts:
