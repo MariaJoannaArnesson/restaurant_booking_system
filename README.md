@@ -1,108 +1,284 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Restaurant Le chère
 
-Welcome Maria Arnesson,
+[View the live project here](http://restaurant.herokuapp.com/)
+Here is the reservation system for Le chère Restaurant created in Django for Portfolio Project 4 - Python + Django Essentials for Diploma in Full Stack Software Development at [Code Institute](https://codeinstitute.net/se/). 
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+The user has the ability to book one or more guests for a meal at the restaurant for a specific time and date, and has the ability to edit or delete reservations.
+The website owner has the ability to accept online reservations for this restaurant.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+![responsive]()
 
-## Gitpod Reminders
+# Table of content
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+- [User Experience (UX)](#user-experience-ux)
+    - [Site owner's goal](#site-owners-goal)
+- [Features](#features)
+    - [Existing Features](#existing-features)
+    - [Features Left to Implement](#features-left-to-implement)
+- [Design](#design)
+    - [Wireframe](#wireframe)
+    - [Colour Adobe](#colour-adobe)
+- [Testing](#testing)
+- [Typgraphy](##Typography)   
+- [Deployment](#Deployment)
+- [Technologies Used](#technologies-used)
+    - [Languages Used](#languages-used)
+    - [Frameworks, Libraries and Programs Used](#frameworks-libraries-and-programs-used)
+- [Credits](#Credits)
+    - [Content](##Content)
+    - [Code](##Code)
+    - [Media](##Media)
+    - [Designe](##Designe)
+    - [Testing.md example](#tesingmd-example)
+- [Acknowledgements](#acknowledgements)    
 
-`python3 -m http.server`
 
-A blue button should appear to click: _Make Public_,
+# User Experience (UX)
+## USER STORIES:
+- USER STORY: Basic information on the homepage. #24
+    - As a **Site User** I can **use information from the home page** so that **I will get basic information.**
+- USER STORY: Navigation bar #1
+    - As a **Site User** I can **use navigation menu ** to **switch to other options.**
+- USER STORY: Button Home #2
+    - As a **Site User** I can **select the home option** to **find out more information about the restaurant**, like **restaurant story** and **satisfied customer reviews.**
+- USER STORY: Online Booking Button #5
+    - As a **Site User** I can **select the online booking option** to **make table reservations.**
+- USER STORY: My Bookings Button #6
+    - As a **Site User** I can **select my bookings option** to check **my booking history**
+- USER STORY: Log in / Log out Button #7
+    - As a **Site User** I can **select the option log in/ log out** to be able **to log in or out of the site.**
+- USER STORY: Our Menu #8
+    - As a **Site User** I can **use the our menu option** to check **the current menu.**
+- USER STORY: Lower priced meal suggestions are available on the home page. #25
+    - As a **Site User** I would like to have **access to the lower priced meals shown on the home page** so that **I can take advantage of the promotion.**
+- USER STORY: Icons showing customer and meal information. #26
+    - As a **Site User** I am aware of the **number of guests** and **the number of meals in the restaurant** so that **I know if the restaurant has good reviews.**
+- USER STORY: Chef information and photo. #27
+    - As a **Site User** I want **access to information about the chef** so that **I can find out more about the restaurant.**            
+- USER STORY: Admin account #9
+    - As a **Admin** I can **access to all table reservations**
+- USER STORY: Video for the table booking page. #28
+    - As a **Site User** I can **see the video of the table** so that **I can see the structure of the tables in the restaurant.**    
+- USER STORY: Create booking #10
+    - As a **Site User** I can **choose the online booking option** to **reserve a table**
+- USER STORY: Edit reservation #11
+    - As a **logged in Site User** I can **edit/delete existing bookings** so that **I can make changes online if needed.**
+- USER STORY: Check reservations #12
+    - As a **Site User** I can **select my bookings option** to check **my bookings history.**
+- USER STORY: Account registration #14
+    - As a **Site User** I can **register an account**
+- USER STORY: Log in #15
+    - As a **Site User** I can **register or log in** to **make table reservations**
+- USER STORY: Registration #16
+    - As a **Site User** I can **register** by **entering my email, password** and **confirming my password.**
+- USER STORY: Registration #17
+    - As a **Story User** I can **easily log in** and **log out** so that **I can make a reservation**. 
+- USER STORY: Registration #18
+    - As a **Site User** I may **receive a confirmation email** after registration so that **I can verify that my account registration is successful.**
+- USER STORY: Login #19
+    - As a Story User I can log into the website by entering my email/username and password
+- USER STORY: Register #20
+    - As a **Story User** I can **easily register an account** so I can **check my booking history.**
+- USER STORY: Registration #21
+    - As a **Site User** I can **have a user profile** so that **I can check my booking history** and 	**booking confirmations,** and **edit** and **delete booking.**
+- USER STORY: Registration #22
+    - As a **Site User** I can **easily recover my password** in case **I forget it.**
+- USER STORY: Footer layout #23
+    - As a **Site User** I can **use the footer** to switch to **other options** and check **restaurant locations on the map.**
+-                                                                     
 
-Another blue button should appear to click: _Open Browser_.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
 
-A blue button should appear to click: _Make Public_,
 
-Another blue button should appear to click: _Open Browser_.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
 
-To log into the Heroku toolbelt CLI:
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+## Site owner's goal:
+- First time visitor goals:
+   
 
-------
+- Returning visitor goals:
+   
 
-## Release History
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+# Features
+## Existing Features
+- Navigation bar
+    - The navigation bar is easy to read and looks pleasent. The full responsive navigation bar includes links the Logo, Home page, Online booking, Our Menu and it is possible to log in and check the booking's history. The navigation bar is identical in each page to allow for easy navigation.
+    The navigation bar is responsive on the iPod screen, the sites in the navigation bar on smallare screen are covered to the 'burger' style. 
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+    When a user is not logged in, it is possible to register or log in. The logged in user has the ability to make a reservation and check the reservations in the booking history, and the ability to log out.
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+    The navigation bar will allow the user to easily navigate from page to page on all devices without returning to the previous page using the "Back" button.
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+    ![Navigation bar]()
+    ![Navigation bar iphone]()
+    ![Navigation bar ipad]()
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+- Home Page
+    - After the page loads, a picture of a women with a cup is shown as the main picture that introduces the text about the restaurant.    
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+    ![home_page](static/assets/images/home_page.png)
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+- Introduction text
+    - Scrolling down a few words from the author is introducing and setting out what the website is presenting and the general information about the restaurant is being told.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+    ![our_chef](static/assets/images/our_chef.png)
+    ![our_story](static/assets/images/our_story.png)
+    ![likes](static/assets/images/likes.png)
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+- Home Page Photos of foods
+    - The next part of the main page shows four photos of food nicely arranged  one above the other. The photos present meals served in the restaurant.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+   ![special_offers](static/assets/images/special_offers.png)
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+- Footer
+    - The footer includes site pages, such as: Home, Menu, Online booking. A map of the restaurant's location, address and opening hours are presented.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+    - The background of the footer is slightly darker to show the contrast between the text in a distinctive way.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+    ![Footer]()
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+- Menu
+    - The menu page gives a list of meals served in the restaurant. There is described the meals, drinks and the price of them.
 
-------
+  ![menu](static/assets/images/menu.png)
 
-## FAQ about the uptime script
+- Booking Online Page
+    - Booking online page 
 
-**Why have you added this script?**
+    ![messages](static/assets/images/messages.png)
+    ![online_booking](static/assets/images/online_booking.png)
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+    ![selest_table](static/assets/images/select_table.png)
 
-**How will this affect me?**
+- Log in / Log out
+    -
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+    ![sign_up]()
+    ![log_in]()
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+## Features which could be implemented in the future:
+- video supporting the facts:
+    - By adding a video about the restaurant, the user could learn more about restaurant and localisation.
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+# Design
+## Wireframe: 
+- Wireframe Desktop:
+    - Home Page
+    ![Wireframe home page desktop]()
 
-**So….?**
+    - Menu
+    ![Wireframe types desktop]()
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+    - Booking Online Page
+    ![Wireframe gallery desktop]()
 
-**Can I opt out?**
+    - Log in
+    ![Wireframe timeline desktop]()
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+    - Contact Page
+    ![Wireframe contact desktop]()
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+    - Thank You Page
+    ![Wireframe thank you desktop]()
 
-**Anything more?**
+- Wireframe iPad
+    - Home Page
+    ![Wireframe home page ipad]()
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+    - Menu
+    ![Wireframe types ipad]()
 
----
+    - Booking Online Page
+    ![Wireframe gallery ipad]()
 
-Happy coding!
+    - Log in/ log out
+    ![Wireframe timeline ipad]()
+
+    - Contact Page
+    ![Wireframe contact ipad]()
+
+    - Thank You Page
+    ![Wireframe thank you ipad]()
+
+- Wireframe iPhone   
+    - Home Page
+
+   ![Wireframe home page iphone]()
+
+    - Menu
+    ![Wireframe types iphone]()
+
+    - Booking Online Page
+    ![Wireframe gallery iphone]()
+
+    - Log in / log out
+    ![Wireframe timeline iphone]()
+
+    - Contact Page
+    ![Wireframe contact iphone]() 
+
+    - Thank you Page
+    ![Wireframe thank you iphone]()
+
+## Colour Adobe
+
+The background color is chosen in a light color to make the contrast between text, photos and background clearly visible.
+
+![colour home page part1]()
+![colour home page part2]()
+![colour adobe gallery]()
+![colour adobe timeline]()
+![colour adobe contact]()
+## Typography
+
+
+- Google Fonts were used to import Caveat, Courier and Sans fonts into styles.css. They were chosen because "Caveat" goes well with the quote and "Courier New" and "Sans" go well together and match the text on the history page.
+
+# Testing 
+
+Testing information can be found in separate [testing.md](testing.md) file. 
+
+# Deployment:
+- The site was deployed to GitHub pages. The steps to deploy are as follows:
+    - 
+
+
+
++# Technologies Used
+## Languages Used
+- [HTML](https://sv.wikipedia.org/wiki/HTML)
+- [CSS](https://en.wikipedia.org/wiki/CSS)
+- [PYTHON]
+-
+
+## Frameworks, Libraries and Programs Used:
+
+- [Balsamiq](https://balsamiq.com/) was used to create wireframes.
+- [Font Awesome](https://fontawesome.com/) was used to create icons to footer.
+- [Google Fonts](https://fonts.google.com/?preview.text=Love%20Running&preview.text_type=custom) was used to import 'Caveat', 'Courier New' och 'Sans' that have been used for each page.
+- [Git](https://git-scm.com/) was used  by utilising the Gitpod terminal to commit to Git and Push to GitHub.
+- [GitHub](https://github.com/) was used as a repository for code of the project. 
+
+# Credits
+
+## Content:
+- 
+## Code:
+- 
+
+## Media:
+- 
+  
+   
+## Designe
+- 
+
+## Credits
+
+- (https://getbootstrap.com/)
+- (https://www.djangoproject.com/)
+- (https://tobiasahlin.com/moving-letters/#16)
