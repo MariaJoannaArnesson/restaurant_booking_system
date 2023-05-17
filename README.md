@@ -75,30 +75,25 @@ Responsive
     - As a **Site User** I can **choose the online booking option** to **reserve a table**
 - USER STORY: Check reservations #20
     - As a **Site User** I can **select my bookings option** to check **my bookings history.**
-                                                          
-
-
-
-
-
-
-
-
-## Site owner's goal:
-- First time visitor goals:
-   
-
-- Returning visitor goals:
-   
-
 
 # Features
 ## Existing Features
 - Navigation bar
     - The navigation bar is easy to read and looks pleasent. The full responsive navigation bar includes links the Logo, Home page, Online booking, Our Menu and it is possible to log in and check the booking's history. The navigation bar is identical in each page to allow for easy navigation.
     The navigation bar is responsive on the iPod screen, the sites in the navigation bar on smallare screen are covered to the 'burger' style. 
+    ![Navigation bar logged out user ipad](static/images/navbar_ipad_login.png)
 
-    When a user is not logged in, it is possible to register or log in. The logged in user has the ability to make a reservation and check the reservations in the booking history, and the ability to log out.
+    ![Navigation bar logged in user ipad](static/images/navbar_ipad_logout.png)
+
+    When a user is not logged in, it is possible to register or log in:
+
+    ![Navigation bar logged out user](static/images/navbar_login.png)
+    
+    The logged in user has the ability to make a reservation and check the reservations in the booking history, and the ability to log out:
+
+    ![Navigation bar logged in user](static/images/navbar_logout.png)
+
+
 
     The navigation bar will allow the user to easily navigate from page to page on all devices without returning to the previous page using the "Back" button.
 
