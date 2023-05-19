@@ -11,6 +11,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="{% static 'js/script.js' %}"></script>
     <script src="https://kit.fontawesome.com/142db3e41a.js" crossorigin="anonymous"></script>
 
@@ -142,6 +143,35 @@
             let alert = new bootstrap.Alert(messages);
             alert.close();
         }, 2500);
+
+        var textWrapper = document.querySelector('.ml14 .letters');
+        textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+        anime.timeline({loop: true})
+        .add({
+            targets: '.ml14 .line',
+            scaleX: [0,1],
+            opacity: [0.5,1],
+            easing: "easeInOutExpo",
+            duration: 900
+        }).add({
+            targets: '.ml14 .letter',
+            opacity: [0,1],
+            translateX: [40,0],
+            translateZ: 0,
+            scaleX: [0.3, 1],
+            easing: "easeOutExpo",
+            duration: 800,
+            offset: '-=600',
+            delay: (el, i) => 150 + 25 * i
+        }).add({
+            targets: '.ml14',
+            opacity: 0,
+            duration: 1000,
+            easing: "easeOutExpo",
+            delay: 1000
+        });
+        
     </script>
   </body>
 </html>

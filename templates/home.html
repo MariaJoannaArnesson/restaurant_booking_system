@@ -10,15 +10,22 @@
     
  
   </header>
+  <h1 class="ml14">
+    <span class="text-wrapper">
+      <span class="letters">Find Your Element</span>
+      <span class="line"></span>
+    </span>
+  </h1>
   <div class="card text-bg-dark">
     <img src="https://img.freepik.com/free-photo/lifestyle-portrait-elegant-young-woman-with-dark-wavy-hairstyle-trendy-makeup-fashionable-beige-pullover-coat-sitting-cafe-terrace-drinking-coffee-from-white-cup_197531-24448.jpg?size=626&ext=jpg" class="card-img" alt="...">
     <div class="card-img-overlay">
       <div class="logo">
-        <h3>Welcome to</h3>
+        <h3>Welcome to
         <h3 class="ml6">
           <span class="text-wrapper">
             <span class="letters">Le chère</span>
           </span>
+        </h3>
       </div>
     </div>
   </div>  
@@ -73,5 +80,24 @@
 </div>
 </center>
 </br></br></br></br>
+<script>
+var textWrapper = document.querySelector('.ml6 .letters');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml6 .letter',
+    translateY: ["1.1em", 0],
+    translateZ: 0,
+    duration: 750,
+    delay: (el, i) => 50 * i
+  }).add({
+    targets: '.ml6',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+  });
+</script>
 {% endblock %}
 
