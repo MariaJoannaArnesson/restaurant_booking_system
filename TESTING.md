@@ -29,11 +29,35 @@ Python Testing
     
 
 
-- USER STORY: Button Home #2
+2. USER STORY: Button Home #2
     - As a **Site User** I can **select the home option** to **find out more information about the restaurant**, like **restaurant story** and **satisfied customer reviews.**
+
+    Acceptance Criteria:
+    - The home option must be available on each page of the webbsite in the navigation bar.
+
+    By selecting the home option, the user has access to the main page showing photos of products that are on sale (by selecting the "see our menu" option, it is possible to go to our menu page) as well as a description of the history of the restaurant, a few words about the restaurant's chef.
+
+    The layout of the restaurant Le chère Home Page is built in the following way:
+
+    - After loading the page, a picture of a woman holding a mug appears.
+    - Scrolling down, there are privoded 4 pictures of products that are currently discounted.
+    - Scrolling down, there are provided information about the number of satisfed guests, lunches every day, family tables, team members.
+    - Scrolling down, there are provided see two pictures of the dishes and a description of the history of the restaurant,
+    - Scrolling down, there is provided a photo of the woman who is the chef of the restaurant and a short introduction.
+
 
 - USER STORY: My Bookings Button #4
     - As a **Site User** I can **select my bookings option** to check **my booking history**
+
+    Acceptance Criteria:
+    - The home option must be available on each page of your site in the navigation bar
+
+    Using the navigation bar, it is possible to use the option: "Online Booking". This site gives us the opportunity to book a table directly on the website, in a very simple way, using a form.
+
+    The layout of the restaurant Le chère Online Booking Page is built in the following way:
+
+    
+
 - USER STORY: Log in / Log out Button #5
     - As a **Site User** I can **select the option log in/ log out** to be able **to log in or out of the site.**
 - USER STORY: Our Menu #6
