@@ -169,58 +169,24 @@ Responsive
     ![Wireframe home page desktop]()
 
     - Menu
-    ![Wireframe types desktop]()
+    ![Wireframe menu desktop](static/images/wireframe_menu_deskopt.png)
 
     - Booking Online Page
-    ![Wireframe gallery desktop]()
+    ![Wireframe booking online desktop](static/images/wireframe_booking_online_deskopt.png)
 
-    - Log in
-    ![Wireframe timeline desktop]()
+    - My Bookings Page
+    ![Wireframe my bookings desktop](static/images/wireframes_mybookings_deskopt.png)
 
-    - Contact Page
-    ![Wireframe contact desktop]()
-
-    - Thank You Page
-    ![Wireframe thank you desktop]()
-
-- Wireframe iPad
+- Wireframe on smaller screen
     - Home Page
     ![Wireframe home page ipad]()
 
     - Menu
-    ![Wireframe types ipad]()
+    ![Wireframe types ipad](static/images/wireframe_menu_ipad.png)
 
     - Booking Online Page
-    ![Wireframe gallery ipad]()
+    ![Wireframe gallery ipad](static/images/wireframe_booking_online_ipad.png)
 
-    - Log in/ log out
-    ![Wireframe timeline ipad]()
-
-    - Contact Page
-    ![Wireframe contact ipad]()
-
-    - Thank You Page
-    ![Wireframe thank you ipad]()
-
-- Wireframe iPhone   
-    - Home Page
-
-   ![Wireframe home page iphone]()
-
-    - Menu
-    ![Wireframe types iphone]()
-
-    - Booking Online Page
-    ![Wireframe gallery iphone]()
-
-    - Log in / log out
-    ![Wireframe timeline iphone]()
-
-    - Contact Page
-    ![Wireframe contact iphone]() 
-
-    - Thank you Page
-    ![Wireframe thank you iphone]()
 
 ## Colour Adobe
 
