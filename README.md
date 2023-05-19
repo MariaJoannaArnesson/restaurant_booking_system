@@ -140,6 +140,11 @@ Responsive
     ![onlinebooking](static/images/onlinebooking.png)
     - Booking Online Page on smaller screens:
     ![onlinebooking_ipad](static/images/onlinebooking_ipad.png)
+
+- My Bookings Page
+    - Edit/Remove booking.
+
+    ![mybookings](static/images/mybookings.png)
 - Messages 
     ![messages](static/assets/images/messages.png)
     ![online_booking](static/assets/images/online_booking.png)

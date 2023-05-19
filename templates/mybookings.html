@@ -8,16 +8,17 @@
 {% block body %}
 <section class="v-100 gradient-custom">
   <div class="container py-5 h-100">
-    <div class="row d-flex align-items-center h-100">
+   
+    <div class="row d-flex  align-items-center h-100">
       <div class="col-12 col-md-8 col-lg-6 col-xl-5 offset-lg-2">
         <div class="jumbotron jumbo-height">
-          <h1 class="display-4">Your bookings</h1>
+          <h1 class="display-4">My bookings: </h1>
           <p>Edit/delete your bookings.</p>
           <hr class="my-4">
           <!-- Displays all the reservations of the user-->
           {% for online_booking in online_bookings %}
           <div class="accordion" id="accordionExample">
-            <div class="card bg-dark text-white" style="border-radius: 1rem;">
+            <div class="card bg-dark text-white" style="border-radius: 1rem; margin: 3em;">
               
               <div >
                 <div class="card-body">
@@ -41,14 +42,16 @@
                   </p>
                  
                   <p> Ordering's number: {{ online_booking.id }}</p>
-                  <a href="/edit_booking/{{ online_booking.id }}" >Edit</a>
-
+                  <button type="button" class="btn btn-secondary">
+                  <a href="/edit_booking/{{ online_booking.id }}" ></a>Edit
+                </button>
                   <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#staticBackdrop">
                     Delete
                   </button>
                 </div>
               </div>
             </div>
+            
             <!-- Delete modal -->
             <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1"
               aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -83,10 +86,15 @@
             </div>
           </div>
           {% endfor %}
+          
         </div>
+        
+
       </div>
+      
     </div>
   </div>
+  
 </section>
 
 </br></br></br></br></br></br>
