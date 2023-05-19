@@ -2,7 +2,18 @@
 
 {% block content %}
 
-<h3>Edit your booking</h3>
+<h1>Edit your booking</h1>
+<h2>Select your ordering details: </h2>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+
+    <button type="submit">Edit reservation</button>
+
+</form>
+
+{% endblock %}
+
 
 
 
