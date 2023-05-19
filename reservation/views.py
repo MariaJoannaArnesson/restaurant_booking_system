@@ -58,7 +58,7 @@ def mybookings(request):
 
 
 @login_required
-def edit_booking(request, reservation_id):
+def edit_booking(request, online_booking_id):
 
     online_booking = get_object_or_404(OnlineBooking, id=online_booking_id)
     if request.method == 'POST':
@@ -66,12 +66,12 @@ def edit_booking(request, reservation_id):
         if form.is_valid():
             form.save()
             messages.success(request, 'Your booking has been edited.')
-            return redirect('bookings')
+            return redirect('mybookings')
         else:
             messages.error(request, 'This reservation is already booked.')
 
     form = OnlineBookingForm(instance=online_booking)
-    contex = {
+    context = {
         'form': form,
     }            
     return render(request, 'edit_booking.html', context)
