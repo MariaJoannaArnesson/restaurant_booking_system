@@ -71,3 +71,6 @@ input[type="submit"]:active {
 	margin-top: -1em;
     margin-left: -4em;
 }
+.accordion {
+	margin: 1em;
+}

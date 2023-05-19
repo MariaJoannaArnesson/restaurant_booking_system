@@ -1,21 +1,105 @@
+{% extends 'base.html' %}
+{% load static %}
 
+{% block head %}
+<title>Home</title>
+{% endblock %}
 
-
-  
-          <h1>Your bookings</h1>
-
+{% block body %}
+<section class="v-100 gradient-custom">
+  <div class="container py-5 h-100">
+    <div class="row d-flex align-items-center h-100">
+      <div class="col-12 col-md-8 col-lg-6 col-xl-5 offset-lg-2">
+        <div class="jumbotron jumbo-height">
+          <h1 class="display-4">Your bookings</h1>
+          <p>Edit/delete your bookings.</p>
+          <hr class="my-4">
+          <!-- Displays all the reservations of the user-->
           {% for online_booking in online_bookings %}
-            
-                  <p>  Reservation's date: {{online_booking.date }}</p>
-                   
-                  <p>Time: {{online_booking.time}} </p>
-                  <p>No of people: {{online_booking.no_of_guest.guest}}</p>
+          <div class="accordion" id="accordionExample">
+            <div class="card bg-dark text-white" style="border-radius: 1rem;">
+              
+              <div >
+                <div class="card-body">
+                  <p class="text-white">
+                    <i class="fa-solid fa-location-dot" style="color: #d7dae0;"></i>
+                    Restaurant Le Chere
+                  </p>
+                  <p class="text-white">
+                  <i class="fa-solid fa-calendar-days" style="color: #e4e7ec;"></i>
+                  {{online_booking.date }} at {{online_booking.time}}
+                  </p>
+                  <p class="text-white">
+                    <i class="fa-solid fa-person" style="color: #cdd0d6;"></i>
+                  {{online_booking.no_of_guest.guest}} guest(s)
+                  </p>
+                  <p class="text-white">
+                    {{online_booking.occassion}}
+                  </p>
+                  <p class="text-white">
+                    {{online_booking.special_request}}
+                  </p>
+                 
                   <p> Ordering's number: {{ online_booking.id }}</p>
                   <a href="/edit_booking/{{ online_booking.id }}" >Edit</a>
-               
 
-                  <button type="button" >
+                  <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#staticBackdrop">
                     Delete
                   </button>
-                  {% endfor %}
-             
+                </div>
+              </div>
+            </div>
+            <!-- Delete modal -->
+            <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1"
+              aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Delete booking</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    Are you sure you want to delete your reservation?
+                  </div>
+                  <div class="modal-footer">
+                    <a href="/delete_booking/{{ online_booking.id }}">Delete</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {% empty %}
+          <div class="row ">
+            <div class="col text-center pt-5">
+              <div class="card pt-5 pb-5">
+                <h2>No bookings</h2>
+                <p class="pt-3 pb-3">Want to book a table?</p>
+                <div>
+                  <a class="btn btn-info" href="{% url 'online_booking' %}">Booking</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</br></br></br></br></br></br>
+<script type="text/javascript">
+  document.getElementById('id_date').addEventListener('change', function() {
+    let reservations = document.getElementsByClassName('reservation-info');
+    for ( let reservation of reservations){
+        reservation.style.display = "block";
+        let tag = reservation.getAttribute('data-type');
+        if (tag !== this.value)
+            reservation.style.display = "none";
+    }
+    document.getElementById('date-selection').innerHTML = this.value;
+  });
+</script>
+{% endblock %}

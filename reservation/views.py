@@ -73,5 +73,13 @@ def edit_booking(request, online_booking_id):
     form = OnlineBookingForm(instance=online_booking)
     context = {
         'form': form,
-    }            
+    }         
     return render(request, 'edit_booking.html', context)
+
+
+@login_required
+def delete_booking(request, online_booking_id):
+    online_booking = get_object_or_404(OnlineBooking, online_booking_id)
+    online_booking.delete()
+    messages.success(request, 'Reservation is now deleted.')
+    return redirect('mybookings')
