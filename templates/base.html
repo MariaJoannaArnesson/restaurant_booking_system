@@ -14,6 +14,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="{% static 'js/script.js' %}"></script>
     <script src="https://kit.fontawesome.com/142db3e41a.js" crossorigin="anonymous"></script>
+    
 
     {% block head %}
     {% endblock %}
@@ -143,37 +144,7 @@
             let messages = document.getElementById('msg');
             let alert = new bootstrap.Alert(messages);
             alert.close();
-        }, 2500);
-
-        var textWrapper = document.querySelector('.ml14 .letters');
-        textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-
-        anime.timeline({loop: true})
-        .add({
-            targets: '.ml14 .line',
-            scaleX: [0,1],
-            opacity: [0.5,1],
-            easing: "easeInOutExpo",
-            duration: 900
-        }).add({
-            targets: '.ml14 .letter',
-            opacity: [0,1],
-            translateX: [40,0],
-            translateZ: 0,
-            scaleX: [0.3, 1],
-            easing: "easeOutExpo",
-            duration: 800,
-            offset: '-=600',
-            delay: (el, i) => 150 + 25 * i
-        }).add({
-            targets: '.ml14',
-            opacity: 0,
-            duration: 1000,
-            easing: "easeOutExpo",
-            delay: 1000
-        });
-        
+        }, 2000);
     </script>
-     <script src="static/js/script.js"></script>
   </body>
 </html>

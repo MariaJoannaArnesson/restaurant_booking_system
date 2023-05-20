@@ -5,10 +5,12 @@ from .models import OnlineBooking
 from .forms import OnlineBookingForm
 from datetime import date
 from django.contrib import messages
+from django.views import View
 
 
-def home(request):
-    return render(request, 'home.html', {})
+class HomeView(View):
+    def get(self, request):
+        return render(request, 'home.html', {})
 
 
 def reservation(request):
@@ -19,7 +21,7 @@ def menu(request):
     return render(request, 'menu.html')
 
 
-@login_required
+@login_required    
 def online_booking(request):
 
     if request.method == 'POST':
