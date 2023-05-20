@@ -6,6 +6,12 @@
 {% endblock %}
 
 {% block body %}
+{% for message in messages %}
+<div class="alert {{ message.tags }} alert-dismissible fade show" id="msg" role="alert">
+    {{ message | safe }}
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+{% endfor %}
 <section class="v-100 gradient-custom">
   <div class="container py-5 h-100">
    
@@ -43,7 +49,7 @@
                  
                   <p> Ordering's number: {{ online_booking.id }}</p>
                   <button type="button" class="btn btn-secondary">
-                  <a href="/edit_booking/{{ online_booking.id }}" ></a>Edit
+                  <a href="/edit_booking/{{ online_booking.id }}" > Edit </a>
                 </button>
                   <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#staticBackdrop">
                     Delete
@@ -98,16 +104,5 @@
 </section>
 
 </br></br></br></br></br></br>
-<script type="text/javascript">
-  document.getElementById('id_date').addEventListener('change', function() {
-    let reservations = document.getElementsByClassName('reservation-info');
-    for ( let reservation of reservations){
-        reservation.style.display = "block";
-        let tag = reservation.getAttribute('data-type');
-        if (tag !== this.value)
-            reservation.style.display = "none";
-    }
-    document.getElementById('date-selection').innerHTML = this.value;
-  });
-</script>
+
 {% endblock %}

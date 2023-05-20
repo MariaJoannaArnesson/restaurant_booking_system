@@ -2,7 +2,7 @@
 {% load static %}
 
 {% block head %}
-<title>Home</title>
+<title> Online Booking </title>
 {% endblock %}
 
 {% block body %}
@@ -16,7 +16,7 @@
           class="img-fluid" alt="Sample image">
       </div>
       <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
-        <form method='post' action="{% url 'mybookings' %}">
+        <form method='post' action="{% url 'online_booking' %}">
                       
           <span class="h1 fw-bold mb-0">Le chere</span>
        
@@ -26,7 +26,7 @@
         {{ form.as_p }}
    
           
-            <button class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3" type="submit">Add reservation</button>
+            <button class="btn btn-primary" type="submit">Add reservation</button>
           
          
       </form>
