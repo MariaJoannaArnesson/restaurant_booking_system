@@ -1,5 +1,9 @@
 # Restaurant Le chère- Testing details
 
+[Main README.md file](README.md)
+
+[View the live project here](https://restaurantlechere.herokuapp.com)
+
 ## Table of content
 
 ## Automated Testing
