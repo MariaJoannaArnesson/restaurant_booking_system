@@ -95,21 +95,44 @@ Python Testing
     - As a **Site User** I can **register** by **entering my email, password** and **confirming my password.**
     User registration is possible in a very simple way, by filling in the form with an e-mail address and entering a password.  
 - USER STORY: Footer layout #13
-    - As a **Site User** I can **use the footer** to switch to **other options** and check **restaurant locations on the map.**
+    - As a **Site User** I can **use the footer** to check **contact details and opening hours.**
+    The layout of footer to the restaurant Le chère is built in the following way:
+    The footer contains opening hours, contact details such as location, email address and restaurant phone number.
+    In this way, the user can easily and quickly contact the restaurant.
+
 - USER STORY: Basic information on the homepage. #14
     - As a **Site User** I can **use information from the home page** so that **I will get basic information.**
+        - The layout of home page is built in the following way:
+            The entire home page is designed to provide the user with basic information about the restaurant in a very clear and understandable way. There are a few photos so that the user can visually imagine the interior of the restaurant and the dishes served there, and the text is quite short, but it contains a lot of basic and most important information for the customer.
 - USER STORY: Lower priced meal suggestions are available on the home page. #15
     - As a **Site User** I would like to have **access to the lower priced meals shown on the home page** so that **I can take advantage of the promotion.**
+        - The layout Lower priced meal is built in the following way:
+            4 photos of meals with a lower price than usual. By clicking on the 'see our menu' button, the menu page is displayed.
+            The purpose of the featured meals that are on promotion on the home page is to encourage the user to consider ordering them. The idea is to update the pictures every week to get more customers.
 - USER STORY: Icons showing customer and meal information. #16
     - As a **Site User** I am aware of the **number of guests** and **the number of meals in the restaurant** so that **I know if the restaurant has good reviews.**
+        - The layout of icons on home page is built in the following way:
+        4 icons representing: 1550 satisfied guests, 125 launches every day, 35 family tables, 18 team members.
 - USER STORY: Chef information and photo. #17
-    - As a **Site User** I want **access to information about the chef** so that **I can find out more about the restaurant.**            
+    - As a **Site User** I want **access to information about the chef** so that **I can find out more about the restaurant.** 
+        - The layout of information about chef to the restaurant on home page is built in the following way:
+        There is presented a photo of the chef, a short description, and a signature.      
 - USER STORY: Video for the table booking page. #18
     - As a **Site User** I can **see the video of the table** so that **I can see the structure of the tables in the restaurant.**    
+        - The layout of video for the table booking page is built in the following way:
+        This page shows the interior and table layout of the restaurant, and basic information on how the user can reserve a table.
 - USER STORY: Create booking #19
     - As a **Site User** I can **choose the online booking option** to **reserve a table**
+        - The layout of online booking page is built in the following way:
+        The Online Booking page presents a form so that the user can easily book a table, the form includes the number of guests, date and time of booking, occasion and special request.
+
 - USER STORY: Check reservations #20
     - As a **Site User** I can **select my bookings option** to check **my bookings history.**
+        - The layout of the restaurant Le chère Online Booking Page is built in the following way:
+
+         - while filling out the form, it is necessary to indicate the number of guests, date and time of booking, occassion and special request.
+        - by selecting the "add reservation" option, the user sends the data further, and the can check the booking history on the page: my bookings.
+
 
 ## Manual Testing
 
