@@ -100,7 +100,7 @@ Responsive
 - Home Page
     - After the page loads, a picture of a women with a cup is shown as the main picture that introduces the text about the restaurant.    
 
-    ![home_page](static/assets/images/home_page.png)
+    ![home_page](static/images/homepage.png)
 
 - Introduction text
     - Scrolling down a few words from the author is introducing and setting out what the website is presenting and the general information about the restaurant is being told.
