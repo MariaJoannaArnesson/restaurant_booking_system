@@ -221,5 +221,26 @@ All steps are performed in browsers:
 
 #### Log out Page
 
-1. Log out Page Tezt
+1. Log out Page Text
+    - It has been confirmed that the title and text are correct and display correctly and on correctly place.
+    - The button works properly, and after pressing log out button, the user is logged out.
 
+#### Edit Booking Page
+
+1. Edit Booking Page Image next to the form
+    - It has been confirmed that the main image on the site is clear and shows up after the page loads.
+
+2. Edit Booking Page Text
+    - It has been confirmed that the title and text are correct and display correctly and on correctly place.
+
+3. Edit Booking Page Form
+    - It has been confirmed that the edit booking page form is laid out as expected.
+    - It has been confirmed that if a user submits a form without filling out the required fields, a message is shown to complete them.
+    - It has been confirmed that it shows a message with a valid date if the user enters a name other the date in the date input field. 
+    - it has been confirmed that after completing the form correctly and pressing submit, the user will go to the my bookings page.
+
+#### Delete Booking Page
+
+1. Delete Booking Page Text
+    - It has been confirmed that the title and text are correct and display correctly and on correctly place.
+    - The button works properly, and after pressing delete booking button, the user is logged out.
