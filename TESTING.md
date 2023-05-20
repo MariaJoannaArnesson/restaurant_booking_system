@@ -180,5 +180,46 @@ All steps are performed in browsers:
     - It has been confirmed that the online booking page form is laid out as expected.
     - It has been confirmed that if a user submits a form without filling out the required fields, a message is shown to complete them.
     - It has been confirmed that it shows a message with a valid date if the user enters a name other the date in the date input field. 
-    - it has been confirmed that after completing the form correctly and pressing submit, the user will go to the my bookings page.      
+    - it has been confirmed that after completing the form correctly and pressing submit, the user will go to the my bookings page.
+
+#### My bookings Page
+
+1. My bookings Page Text
+    - It has been confirmed that the title and text are correct and display correctly and on correctly place.
+    - The data that was entered into the form on the Online Booking page has been transferred to and displayed in the booking details on the my bookings page.
+
+#### Log in
+
+1. Log in Page Image next to the form
+    - It has been confirmed that the main image on the site is clear and shows up after the page loads.
+
+2. Log in Page Text
+    - It has been confirmed that the title and text are correct and display correctly and on correctly place.
+
+3. Log in Page Form
+    - It has been confirmed that the online booking page form is laid out as expected.
+    - It has been confirmed that if a user submits a form without filling out the required fields, a message is shown to complete them.
+     - It has been confirmed that it shows a message with a valid username if the user enters a name other the username in the username input field.
+     - It has been confirmed that it shows a message with a valid password if the user enters a name other the password in the password input field.
+    - it has been confirmed that after completing the form correctly and pressing submit, the user will go to the home page.
+
+#### Sign Up
+
+1. Sign Up Page Image next to the form
+    - It has been confirmed that the main image on the site is clear and shows up after the page loads.
+
+2. Log in Page Text
+    - It has been confirmed that the title and text are correct and display correctly and on correctly place.
+
+3. Log in Page Form
+    - It has been confirmed that the online booking page form is laid out as expected.
+    - It has been confirmed that if a user submits a form without filling out the required fields, a message is shown to complete them.
+     - It has been confirmed that it shows a message with a valid e-mail address if the user enters a name other the e-mail address in the e-mail input field.
+     - Confirmed to display a message with the correct password if the user enters a different password than the first time, or if the password does not match the required arrangement.
+    - it has been confirmed that after completing the form correctly and pressing submit, the user will go to the home page.
+
+
+#### Log out Page
+
+1. Log out Page Tezt
 
