@@ -73,16 +73,27 @@ Python Testing
 
 - USER STORY: Admin account #7
     - As a **Admin** I can **access to all table reservations**
+    The layout of the restaurant Le chère Admin account is built in the following way:
+    Logged in via admin account it is possible to access all booked tables. Editing and canceling reservations is possible. Entering the number of guests is also possible.
+
 - USER STORY: Edit reservation #8
     - As a **logged in Site User** I can **edit/delete existing bookings** so that **I can make changes online if needed.**
+    The layout of the restaurant Le chère My bookings is built in the following way:
+    There is the user's bookings history.
+    In My Bookings Page user has the ability to edit/delete reservations.
+
 - USER STORY: Account registration #9
     - As a **Site User** I can **register an account**
+     The layout of the restaurant Le chère Log in/log out Page is built in the following way:
+    - On the sign up page, the user is required to provide the contact phrase so that later can easily log in to the login page using the username and password.
+
 - USER STORY: Log in #10
     - As a **Site User** I can **register or log in** to **make table reservations**
+    Wanting to make a reservation without being logged in, a message is displayed that the user must first log in.
+
 - USER STORY: Registration #11
     - As a **Site User** I can **register** by **entering my email, password** and **confirming my password.**
-- USER STORY: Password #12
-    - As a **Site User** I can **easily recover my password** in case **I forget it.**     
+    User registration is possible in a very simple way, by filling in the form with an e-mail address and entering a password.  
 - USER STORY: Footer layout #13
     - As a **Site User** I can **use the footer** to switch to **other options** and check **restaurant locations on the map.**
 - USER STORY: Basic information on the homepage. #14
