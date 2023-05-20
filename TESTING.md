@@ -13,11 +13,9 @@
 Python Testing 
 - Testing for python code was run in the test.py file. 
 
+## Manual Testing 
 ### User Stories Testing
 
-
-
-   
 
 
 1. USER STORY: Navigation bar #1
@@ -134,7 +132,53 @@ Python Testing
         - by selecting the "add reservation" option, the user sends the data further, and the can check the booking history on the page: my bookings.
 
 
-## Manual Testing
 
+### Testing on desktop
+All steps are performed in browsers:
+ - Chrome - Version 111.0.5563.65 (Officiell version) (64 bitar)
+ - Microsoft Edge - Version 111.0.1661.44 (Officiell version) (64 bitar)
+ - Firefox - 111.0 (64-bitars)
 
+#### This has been verified on every page:
+- Navigation bar:
+    - Hover over each link has been made. The effect has been confirmed to be correct.
+    - The Home page link has been pressed and confirmed to take the user to the Home page.
+    - The Our Menu page link has been pressed and confirmed to take the user to the Our Menu page.
+    - The Online Booking page link has been pressed and confirmed to take the user to the Online Booking page.
+    - The My bookings page link has been pressed and confirmed to take the user to the My bookings page.
+    - The Sign Up and Log in/ Log out page link has been pressed and confirmed to take the user to the responsive page.
+
+- Footer:
+    - It has been verified that the footer is displayed as expected.
+
+#### Home Page
+
+1. Home Page Images
+    - It has been confirmed that the main image on the site is clear and shows up after the page loads.
+    - All pictures on the home page have been reviewed and verified to be the correct size.    
+
+2. Home Page Text
+    - It has been confirmed that the title and text are correct and display correctly.
+
+#### Our Menu Page
+
+1. Menu
+     - It has been confirmed that the menu text is correct, in the right place and display correctly. 
+
+2. Our Menu Page Images
+    - It has been confirmed that all pictures on the site is clear and shows up after the page loads and have been reviewed and verified to be the correct size and on correct place.
+
+#### Online Booking Page
+
+1. Online Booking Page Image next to the form
+    - It has been confirmed that the main image on the site is clear and shows up after the page loads.
+
+2. Online Booking Page Text
+    - It has been confirmed that the title and text are correct and display correctly and on correctly place.
+
+3. Online Booking Page Form
+    - It has been confirmed that the online booking page form is laid out as expected.
+    - It has been confirmed that if a user submits a form without filling out the required fields, a message is shown to complete them.
+    - It has been confirmed that it shows a message with a valid date if the user enters a name other the date in the date input field. 
+    - it has been confirmed that after completing the form correctly and pressing submit, the user will go to the my bookings page.      
 
