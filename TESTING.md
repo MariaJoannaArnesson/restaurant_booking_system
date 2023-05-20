@@ -56,12 +56,21 @@ Python Testing
 
     The layout of the restaurant Le chère Online Booking Page is built in the following way:
 
-    
+    - while filling out the form, it is necessary to indicate the number of guests, date and time of booking, occassion and special request.
+    - by selecting the "add reservation" option, the user sends the data further, and the can check the booking history on the page: my bookings.
 
 - USER STORY: Log in / Log out Button #5
     - As a **Site User** I can **select the option log in/ log out** to be able **to log in or out of the site.**
+
+    The layout of the restaurant Le chère Log in/log out Page is built in the following way:
+    - On the sign up page, the user is required to provide the contact phrase so that later can easily log in to the login page using the username and password.
+
+
 - USER STORY: Our Menu #6
     - As a **Site User** I can **use the our menu option** to check **the current menu.**
+    The layout of the restaurant Le chère Menu Page is built in the following way:
+    - The menu is divided into three parts: main dishes, drinks and desserts. Each of them presents a description of the dishes served in the restaurant and the price.
+
 - USER STORY: Admin account #7
     - As a **Admin** I can **access to all table reservations**
 - USER STORY: Edit reservation #8
