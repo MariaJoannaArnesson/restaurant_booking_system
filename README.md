@@ -152,9 +152,16 @@ Responsive
     ![mybookings](static/images/mybookings.png)
 
 - Log in / Log out
-
+    - Sign Up Page
+    After opening the sign up page, a photo and a form to fill out are displayed. For this purpose, the user should fill in his contact details, such as: username, email and password.
     ![sign_up](static/images/signup.png)
+
+    - Log In Page
+    After opening the login page, a photo and a form to fill out are displayed. The user should fill in the username and password for this purpose.
     ![log_in](static/images/login.png)
+
+    - Log Out Page
+    When the log out page is opened, a message is displayed asking if the user is sure that he/ she wants to log out, and a button: "log out" is displayed.
     ![log_out](static/images/signout.png)
 
 ## Features which could be implemented in the future:
