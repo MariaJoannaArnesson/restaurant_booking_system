@@ -105,14 +105,24 @@ Responsive
 - Introduction text
     - Scrolling down a few words from the author is introducing and setting out what the website is presenting and the general information about the restaurant is being told.
 
-    ![our_chef](static/assets/images/our_chef.png)
-    ![our_story](static/assets/images/our_story.png)
-    ![likes](static/assets/images/likes.png)
+
 
 - Home Page Photos of foods
     - The next part of the main page shows four photos of food nicely arranged  one above the other. The photos present meals served in the restaurant.
 
-   ![special_offers](static/assets/images/special_offers.png)
+   ![special_offers](static/images/special_offers_homepage.png)
+
+- Home Page Introduction Text
+
+    ![introduction_text](static/images/french_restaurant_homepage.png)
+
+- Home Page - short description about the restaurant
+
+    ![our_story](static/images/our_story_homepage.png)
+
+Home Page - about a chef to the restaurant
+
+    ![chef](static/images/our_chef_homepage.png)
 
 - Footer
     - The footer includes restaurant's location, address and opening hours are presented.
