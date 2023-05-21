@@ -11,26 +11,21 @@ Responsive
 # Table of content
 
 - [User Experience (UX)](#user-experience-ux)
-    - [Site owner's goal](#site-owners-goal)
 - [Features](#features)
     - [Existing Features](#existing-features)
     - [Features Left to Implement](#features-left-to-implement)
 - [Design](#design)
     - [Wireframe](#wireframe)
-    - [Colour Adobe](#colour-adobe)
-- [Testing](#testing)
-- [Typgraphy](##Typography)   
+- [Testing](#testing) 
 - [Deployment](#Deployment)
 - [Technologies Used](#technologies-used)
     - [Languages Used](#languages-used)
     - [Frameworks, Libraries and Programs Used](#frameworks-libraries-and-programs-used)
 - [Credits](#Credits)
-    - [Content](##Content)
     - [Code](##Code)
     - [Media](##Media)
-    - [Designe](##Designe)
-    - [Testing.md example](#tesingmd-example)
-- [Acknowledgements](#acknowledgements)    
+
+  
 
 
 # User Experience (UX)
@@ -155,14 +150,8 @@ Home Page - about a chef to the restaurant
     - Edit/Remove booking.
 
     ![mybookings](static/images/mybookings.png)
-- Messages 
-    ![messages](static/assets/images/messages.png)
-    ![online_booking](static/assets/images/online_booking.png)
-
-    ![selest_table](static/assets/images/select_table.png)
 
 - Log in / Log out
-    -
 
     ![sign_up](static/images/signup.png)
     ![log_in](static/images/login.png)
@@ -198,10 +187,6 @@ Home Page - about a chef to the restaurant
     ![Wireframe gallery ipad](static/images/wireframe_booking_online_ipad.png)
 
 
-## Typography
-
-
-- Google Fonts were used to import Caveat, Courier and Sans fonts into styles.css. They were chosen because "Caveat" goes well with the quote and "Courier New" and "Sans" go well together and match the text on the history page.
 
 # Testing 
 
