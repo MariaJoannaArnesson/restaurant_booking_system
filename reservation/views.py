@@ -32,7 +32,7 @@ def online_booking(request):
             reservation.user = request.user
             reservation.save()
             messages.success(
-                request, 'Reservation request submitted succesfully.'
+                request, 'Reservation request submitted succesfully.You can check you reservation at: My bookings'
                 )
         else:
             messages.error(request, 'The table is already booked.')
