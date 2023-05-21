@@ -18,10 +18,8 @@
     ![validator_js](static/images/validator_js.png)
 
 - Python
-    - [Python visual studio](https://marketplace.visualstudio.com/items?itemName=ms-python.python) was used to validate Python code. 
+    - [Python visual studio](https://marketplace.visualstudio.com/items?itemName=ms-python.python) was used to validate Python code.
 
-Python Testing 
-- Testing for python code was run in the test.py file. 
 
 ## Manual Testing 
 ### User Stories Testing
