@@ -198,15 +198,6 @@ Home Page - about a chef to the restaurant
     ![Wireframe gallery ipad](static/images/wireframe_booking_online_ipad.png)
 
 
-## Colour Adobe
-
-The background color is chosen in a light color to make the contrast between text, photos and background clearly visible.
-
-![colour home page part1]()
-![colour home page part2]()
-![colour adobe gallery]()
-![colour adobe timeline]()
-![colour adobe contact]()
 ## Typography
 
 
@@ -218,7 +209,24 @@ Testing information can be found in separate [testing.md](testing.md) file.
 
 # Deployment:
 - The site was deployed to GitHub pages. The steps to deploy are as follows:
-    - 
+   
+    - Login to Heroku
+    - In the Heroku, select: Create new app
+    - Enter name of the app
+    - Enter region of the app
+    - Navigate to the Settings tab.
+    - In 'Config Vars' select 'PORT' as a key to and '8000' as a value
+    - In 'Config Vars' select 'DATABASE_URL' as a key and select value
+    - In 'Config Vars' select 'SECRET_KEY' as a key and select value
+    - In 'Config Vars' select 'CLOUDINARY_URL' as a key and select value
+    - From the tab on the top, select: Deploy.
+    - Afrerword select Github and connect.
+    - Enter the respository name on Github and select: Search
+    - Click connect button.
+    - In Manual deploy, select the 'Deploy Branch' option
+    - Select 'Open app' on the right hand side of the screen
+    - The app should appear in a new tab on the web browser
+    - The live link can be found here - [View the live project here](https://restaurantlechere.herokuapp.com)
 
 
 
