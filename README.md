@@ -171,12 +171,12 @@ Home Page - about a chef to the restaurant
 ## Features which could be implemented in the future:
 - video supporting the facts:
     - By adding a video about the restaurant, the user could learn more about restaurant and localisation.
-
+- video as a background to the online booking page.
 # Design
 ## Wireframe: 
 - Wireframe Desktop:
     - Home Page
-    ![Wireframe home page desktop]()
+    ![Wireframe home page desktop](static/images/wireframes_homepage.png)
 
     - Menu
     ![Wireframe menu desktop](static/images/wireframe_menu_deskopt.png)
