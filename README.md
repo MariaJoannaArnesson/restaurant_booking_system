@@ -122,7 +122,7 @@ Responsive
 
 Home Page - about a chef to the restaurant
 
-    ![chef](static/images/our_chef_homepage.png)
+![chef](static/images/our_chef_homepage.png)
 
 - Footer
     - The footer includes restaurant's location, address and opening hours are presented.
