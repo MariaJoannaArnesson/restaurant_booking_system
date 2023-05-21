@@ -11,8 +11,14 @@
 
 - W3C Markup Validation HTML
 - W3C CSS validation CSS
+    - [Validator.w3](https://validator.w3.org/nu/#textarea)  was used to validate CSS.
+    ![validator_css](static/images/validator_css.png)
 - JSHint JavaScript
+    - [JSHint](https://jshint.com/) was used to validatw JS.
+    ![validator_js](static/images/validator_js.png)
+
 - Python
+    - [Python visual studio](https://marketplace.visualstudio.com/items?itemName=ms-python.python) was used to validate Python code. 
 
 Python Testing 
 - Testing for python code was run in the test.py file. 
