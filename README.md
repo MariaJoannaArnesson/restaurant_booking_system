@@ -230,12 +230,12 @@ Testing information can be found in separate [testing.md](testing.md) file.
 
 
 
-+# Technologies Used
+# Technologies Used
 ## Languages Used
 - [HTML](https://sv.wikipedia.org/wiki/HTML)
 - [CSS](https://en.wikipedia.org/wiki/CSS)
-- [PYTHON]
--
+- [PYTHON](https://en.wikipedia.org/wiki/Python_(programming_language))
+- [JQUERY](https://en.wikipedia.org/wiki/JQuery)
 
 ## Frameworks, Libraries and Programs Used:
 
