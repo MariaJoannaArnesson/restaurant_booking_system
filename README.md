@@ -248,21 +248,14 @@ Testing information can be found in separate [testing.md](testing.md) file.
 - [Bootstrap](https://getbootstrap.com/) was used to build responsive webbpages.
 
 # Credits
-
-## Content:
-- 
 ## Code:
-- 
+- This page was used to help bild a lay out to Log in, Log out, Sign up, Online booking and Our menu - [MDB](https://mdbootstrap.com/docs/standard/extended/login/)
 
+- This page was used to help me include testing in correctly way - [TESTING.md](https://github.com/AJGreaves/familyhub/blob/master/testing.md)
+
+- My codes were based on information from that site [ModelForm](https://docs.djangoproject.com/en/4.1/topics/forms/modelforms/)
 ## Media:
-- 
-  
-   
-## Designe
-- 
+All pictures was taken from [Freepik](https://www.freepik.com/).
 
-## Credits
 
-- (https://getbootstrap.com/)
-- (https://www.djangoproject.com/)
-- (https://tobiasahlin.com/moving-letters/#16)
+
